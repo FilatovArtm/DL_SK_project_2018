@@ -7,9 +7,6 @@ from src.positional import PositionTrasnformer
 
 class GeneratorGAWNN(torch.nn.Module):
     def __init__(self, hidden_size, z_size, appearance_size, position_size):
-        '''
-        
-        '''
         super(GeneratorGAWNN, self).__init__()
         self.appearance_encoder = torch.nn.Sequential(
             ConvLayer(3, 32, 3, 2),
