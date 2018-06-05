@@ -1,6 +1,4 @@
 import sys
-sys.path.append('/home/aafilatov/GAWNN-pytorch')
-sys.path.append('/home/aafilatov/pytorch-CycleGAN-and-pix2pix')
 import os
 import torch
 import numpy as np
@@ -8,8 +6,8 @@ from torch.autograd import Variable
 from loader import get_train_loader
 
 import time
-from models.pix2pix_model import Pix2PixModel
-from options.train_options import TrainOptions
+from pix2pix.models.pix2pix_model import Pix2PixModel
+from pix2pix.options.train_options import TrainOptions
 
 #torch.cuda.set_device(4)
 #device = torch.device("cuda:4")
